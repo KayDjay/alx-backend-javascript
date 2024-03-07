@@ -1,6 +1,5 @@
-import Pricing from './4-pricing.js';
-import Currency from './3-currency.js';
+import HolbertonClass from "./8-hbtn_class.js";
 
-const p = new Pricing(100, new Currency("EUR", "Euro"))
-console.log(p);
-console.log(p.displayFullPrice());
+const hc = new HolbertonClass(12, "Mezzanine")
+console.log(Number(hc));
+console.log(String(hc));
