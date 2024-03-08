@@ -5,24 +5,24 @@ export default class Car {
     this._color = color;
   }
 
-get brand() {
-  return this._brand;
-}
+  get brand() {
+    return this._brand;
+  }
 
-get motor() {
-  return this._motor;
-}
+  get motor() {
+    return this._motor;
+  }
 
-get color() {
-  return this._color;
-}
+  get color() {
+    return this._color;
+  }
 
-cloneCar() {
-  const Obj = this.constructor[Symbol.species];
-  return new Obj();
-}
+  cloneCar() {
+    const Obj = this.constructor[Symbol.species];
+    return new Obj();
+  }
 
-static get [Symbol.species]() {
-  return this;
-}
+  static get [Symbol.species]() {
+    return this;
+  }
 }
